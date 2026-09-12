@@ -58,7 +58,7 @@ This lets HR managers spend intervention time (1:1s, comp reviews, role changes)
 | 📊 **Monitoring Dashboard** | [https://employee-attrition-prediction-mlops.streamlit.app](https://employee-attrition-prediction-mlops.streamlit.app) |
 | 📓 **EDA Notebook** | [notebooks/Employee_Attrition_EDA.ipynb](notebooks/Employee_Attrition_EDA.ipynb) |
 
-> ⚠️ Once deployed, update `ATTRITION_API_URL` in `monitoring/monitoring_dashboard.py` and `simulation/employee_simulator.py`, and replace the links above — matching the pattern used in the Credit Risk Prediction project.
+> ⚠️ Render free tier: first request may take 30–60 seconds (cold start).
 
 ---
 
