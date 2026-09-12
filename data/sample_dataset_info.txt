@@ -1,0 +1,16 @@
+Employee Attrition Prediction
+IBM HR Analytics Employee Attrition & Performance
+=================================================================
+
+Original employees: 1,470
+Original columns: 35
+Sample employees: 500
+Sample columns: 36
+
+Target:
+Attrition = Yes -> Employee attrition
+Attrition = No  -> Employee retained
+
+Encoded Target:
+Attrition_Encoded = 1 -> Yes
+Attrition_Encoded = 0 -> No

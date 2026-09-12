@@ -1,0 +1,5 @@
+{
+  "model_name": "attrition_model_NeuralNet_v1.joblib",
+  "threshold": 0.3333,
+  "model_card_path": "attrition_models/model_card_NeuralNet_v1_20260809_102834.json"
+}

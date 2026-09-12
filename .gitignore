@@ -1,0 +1,66 @@
+# ============================================================
+# .GITIGNORE — Employee Attrition ML System
+# Only local/dev junk is ignored below.
+# Everything needed for Render (API) + Streamlit Cloud (Dashboard)
+# is intentionally NOT ignored — see the "NEVER IGNORE" notes.
+# ============================================================
+
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# ── Virtual environments ─────────────────────────────────────
+venv/
+env/
+.env
+.venv/
+
+# ── Jupyter ───────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── Logs (runtime-generated, safe to regenerate) ─────────────
+# App re-creates this folder itself (os.makedirs in config.py) —
+# no need to track it in git.
+logs/
+*.log
+
+# ── MLflow local tracking store (large, auto-generated) ──────
+mlruns/
+mlartifacts/
+
+# ── CatBoost training scratch dir (auto-generated) ────────────
+catboost_info/
+
+# ── Pytest / coverage caches ──────────────────────────────────
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# ── OS junk ────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── IDE ───────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+
+# ============================================================
+# NEVER IGNORE — required for Render + Streamlit Cloud deploys
+# (No rule above matches these, listed here only as a reminder
+#  so nobody accidentally adds a broader pattern that hides them)
+# ============================================================
+#   attrition_models/   → champion .joblib + latest_model.json + model cards
+#                          Render loads the model straight from this folder at startup
+#   data/                → demo/sample HR dataset (WA_Fn-UseC_-HR-Employee-Attrition.csv)
+#   src/, serving/, services/, monitoring/, simulation/, scripts/
+#   requirements.txt, requirements_api.txt, requirements_dashboard.txt, runtime.txt
+#   Dockerfile, Dockerfile.dashboard, docker-compose.yml, render.yaml
+#   .github/workflows/ci.yml
