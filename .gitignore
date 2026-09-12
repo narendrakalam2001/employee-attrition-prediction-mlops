@@ -27,8 +27,8 @@ env/
 # ── Logs (runtime-generated, safe to regenerate) ─────────────
 # App re-creates this folder itself (os.makedirs in config.py) —
 # no need to track it in git.
-logs/
-*.log
+!logs/
+
 
 # ── MLflow local tracking store (large, auto-generated) ──────
 mlruns/

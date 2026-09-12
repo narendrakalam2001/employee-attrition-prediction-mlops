@@ -54,8 +54,8 @@ This lets HR managers spend intervention time (1:1s, comp reviews, role changes)
 
 | Service | URL |
 |---|---|
-| 🚀 **FastAPI (Swagger UI)** | *Not yet deployed — `render.yaml` targets Render.com* |
-| 📊 **Monitoring Dashboard** | *Not yet deployed — designed for Streamlit Community Cloud* |
+| 🚀 **FastAPI (Swagger UI)** | [https://employee-attrition-prediction-mlops.onrender.com/docs](https://employee-attrition-prediction-mlops.onrender.com/docs) |
+| 📊 **Monitoring Dashboard** | [https://employee-attrition-prediction-mlops.streamlit.app](https://employee-attrition-prediction-mlops.streamlit.app) |
 | 📓 **EDA Notebook** | [notebooks/Employee_Attrition_EDA.ipynb](notebooks/Employee_Attrition_EDA.ipynb) |
 
 > ⚠️ Once deployed, update `ATTRITION_API_URL` in `monitoring/monitoring_dashboard.py` and `simulation/employee_simulator.py`, and replace the links above — matching the pattern used in the Credit Risk Prediction project.
